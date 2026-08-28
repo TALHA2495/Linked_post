@@ -12,7 +12,7 @@ def draft_post(news):
     # Sends news to Gemini API to write the post
     client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
     prompt = f"Write a 150-word LinkedIn post for startup founders based on this news:\n{news}\nWrite in short paragraphs. No jargon. End with a question for founders."
-    response = client.models.generate_content(model="gemini-2.5-flash", contents=prompt)
+    response = client.models.generate_content(model="gemini-3.6-flash", contents=prompt)
     return response.text
 
 def send_discord(post_text):
