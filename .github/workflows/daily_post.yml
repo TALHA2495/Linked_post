@@ -1,0 +1,27 @@
+name: Daily LinkedIn Draft Trigger
+
+on:
+  schedule:
+    - cron: '0 8 * * 1-5' 
+  workflow_dispatch: 
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install Packages
+        run: pip install requests feedparser google-genai
+
+      - name: Run Script
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: python script.py
