@@ -2,7 +2,7 @@ name: Daily LinkedIn Draft Trigger
 
 on:
   schedule:
-    - cron: '15 4 * * 1-5' 
+    - cron: '0 4 * * *' 
   workflow_dispatch: 
 
 jobs:
