@@ -2,8 +2,11 @@ name: Daily LinkedIn Draft Trigger
 
 on:
   schedule:
-  - cron: '13 4 * * *' 
+    - cron: '13 4 * * *' 
   workflow_dispatch: 
+
+permissions:
+  contents: write
 
 jobs:
   run-pipeline:
@@ -18,10 +21,18 @@ jobs:
           python-version: '3.10'
 
       - name: Install Packages
-        run: pip install requests feedparser google-genai
+        run: pip install requests google-genai
 
       - name: Run Script
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
         run: python script.py
+
+      - name: Commit Updated History
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add history.json
+          git commit -m "Update post topic history [skip ci]" || exit 0
+          git push
