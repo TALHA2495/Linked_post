@@ -1,9 +1,9 @@
 import os
 import re
 import time
-import random
 import requests
 import urllib.parse
+from datetime import datetime
 from google import genai
 
 def draft_post():
@@ -13,28 +13,30 @@ def draft_post():
         
     client = genai.Client(api_key=api_key)
     
-    # Grounded, highly realistic topics tailored for founders of small web dev teams (1–15 people)
-    topics = [
-        "Why the best developer on a 10-person team is usually the one who asks clarifying questions before writing code",
-        "How sending a 2-minute Loom video with your PR saves agency founders hours of testing",
-        "The real difference between code that just works and code a small team can actually maintain a year later",
-        "Why small agency founders don't need 'hero coders'—they need developers who own outcomes",
-        "How proactive async updates on Slack prevent founder micro-management before it even starts"
-    ]
-    daily_topic = random.choice(topics)
+    # Uses today's date as a unique seed so the AI never generates the same scenario twice
+    today_str = datetime.now().strftime("%A, %B %d, %Y")
     
     prompt = f"""
-    Write a LinkedIn post as a pragmatic, hands-on Full-Stack Web Developer sharing an honest workplace insight.
+    Act as a pragmatic, highly competent Full-Stack Web Developer writing an honest, engaging LinkedIn post.
+    Today's Date: {today_str}
 
-    Topic: {daily_topic}
-    Audience: Founders, CEOs, and Tech Leads of small IT agencies and boutique dev studios (1 to 15 employees).
+    Target Audience: Founders, CEOs, and Tech Leads of small IT agencies and boutique web dev studios (1 to 15 employees).
+
+    INSTRUCTIONS FOR TOPIC SELECTION:
+    Pick ONE specific, realistic scenario or lesson based on one of these core content pillars:
+    1. Async Communication & Founder Time-Saving (e.g., Loom videos, clear PRs, Slack updates, managing up).
+    2. Code Quality vs. Shipping Speed (e.g., refactoring vs. launching, handling technical debt, pragmatism).
+    3. Remote Culture & Ownership (e.g., proactive problem solving, taking initiative, asking clarifying questions).
+    4. Modern Web Stacks & Architecture (e.g., Next.js, APIs, state management, database bottlenecks).
+    5. Developer Operations & Developer Experience (e.g., CI/CD, testing, staging environments, debugging).
+
+    Make today's specific angle unique and original. Do NOT repeat broad or generic advice.
 
     TONE & VOICE RULES (STRICTLY ENFORCE HUMAN STYLE):
-    - Write like a real developer having a genuine conversation over coffee or dropping an honest thought on LinkedIn.
-    - Sound grounded, practical, and direct. Avoid sounding like a marketing blog, motivational speaker, or textbook.
+    - Write like a real developer having a genuine conversation or sharing a lesson learned on the job.
+    - Sound grounded, practical, and direct. Avoid sounding like a marketing blog or motivational speaker.
     - STRICTLY BANNED AI WORDS: Do NOT use "delve", "testament", "realm", "landscape", "game-changer", "unleash", "foster", "elevate", "seamless", "revolutionize", "tapestry", "empower", "passionate", "beacon", "mastery".
     - Use real-world dev context (e.g., PR reviews, async updates, Loom walkthroughs, refactoring, edge cases, clear Git commits).
-    - Show strong cultural fit: highlight taking initiative, respecting founder time, and writing clean, readable web code.
 
     FORMATTING RULES:
     - Length: ~120 to 150 words.
@@ -59,7 +61,6 @@ def draft_post():
                 raise RuntimeError(f"Gemini API failed after 3 attempts: {e}")
 
 def send_discord(post_text):
-    # Regex handles casing variations gracefully
     split_text = re.split(r'IMAGE_PROMPT:\s*', post_text, flags=re.IGNORECASE)
     
     if len(split_text) > 1:
@@ -69,7 +70,6 @@ def send_discord(post_text):
         main_post = post_text.strip()
         img_prompt_text = "A clean developer setup with dual monitors showing web code and a warm desk lamp"
     
-    # Enforce Discord limits
     if len(main_post) > 1900:
         main_post = main_post[:1900] + "... [Truncated to fit Discord limits]"
 
