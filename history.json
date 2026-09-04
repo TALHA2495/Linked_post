@@ -25,5 +25,9 @@
   {
     "date": "2026-09-03",
     "topic_summary": "Focusing automated test suites strictly on high-risk business logic balances shipping speed with app stability for small agency teams."
+  },
+  {
+    "date": "2026-09-04",
+    "topic_summary": "Onboarding developers in small agencies by giving them a minor bug fix on day one builds momentum and tests team workflows instantly."
   }
 ]
