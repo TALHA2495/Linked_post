@@ -29,5 +29,9 @@
   {
     "date": "2026-09-04",
     "topic_summary": "Onboarding developers in small agencies by giving them a minor bug fix on day one builds momentum and tests team workflows instantly."
+  },
+  {
+    "date": "2026-09-05",
+    "topic_summary": "Implementing a structured 15-minute unstuck process reduces developer downtime while protecting senior engineering bandwidth."
   }
 ]
