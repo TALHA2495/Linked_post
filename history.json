@@ -57,5 +57,9 @@
   {
     "date": "2026-09-11",
     "topic_summary": "Refactoring legacy client code incrementally protects agency budgets and prevents regressions compared to risky full rewrites."
+  },
+  {
+    "date": "2026-09-12",
+    "topic_summary": "Defining JSON schemas upfront lets frontend and backend developers build features concurrently, eliminating sprint bottlenecks in small dev teams."
   }
 ]
