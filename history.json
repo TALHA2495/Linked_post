@@ -65,5 +65,9 @@
   {
     "date": "2026-09-14",
     "topic_summary": "Using production-scale database seed scripts locally catches performance bugs and broken layouts before code reaches staging or client demos."
+  },
+  {
+    "date": "2026-09-15",
+    "topic_summary": "Allowing lead developers direct technical contact with clients eliminates game-of-telephone delays and frees up founder bandwidth."
   }
 ]
