@@ -81,5 +81,9 @@
   {
     "date": "2026-09-18",
     "topic_summary": "Adding a single-click staging data reset prevents ghost bugs caused by messy client testing during QA."
+  },
+  {
+    "date": "2026-09-19",
+    "topic_summary": "Requiring developers to explain AI-generated code during PR reviews maintains code quality without slowing down boilerplate generation."
   }
 ]
