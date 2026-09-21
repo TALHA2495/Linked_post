@@ -89,5 +89,9 @@
   {
     "date": "2026-09-20",
     "topic_summary": "Adding automated error monitoring to launch checklists lets small agencies catch post-launch bugs before clients notice."
+  },
+  {
+    "date": "2026-09-21",
+    "topic_summary": "Replacing manual setup documentation with an automated executable script reduces setup friction and saves developer hours during project context-switching."
   }
 ]
