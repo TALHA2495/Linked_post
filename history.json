@@ -105,5 +105,9 @@
   {
     "date": "2026-09-30",
     "topic_summary": "Wrapping third-party frontend widgets in isolated error boundaries prevents external API outages from breaking client web applications."
+  },
+  {
+    "date": "2026-10-01",
+    "topic_summary": "Requiring developers to write a failing test before fixing a client bug prevents recurring regressions and saves agency reputation."
   }
 ]
