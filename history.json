@@ -113,5 +113,9 @@
   {
     "date": "2026-10-02",
     "topic_summary": "Opening draft pull requests within hours of starting a task gives tech leads early visibility to catch bad architectural choices before dev time is wasted."
+  },
+  {
+    "date": "2026-10-03",
+    "topic_summary": "Wrapping incomplete client features in simple feature flags keeps the main branch continuously deployable and eliminates emergency release delays."
   }
 ]
