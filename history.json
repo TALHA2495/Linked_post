@@ -117,5 +117,9 @@
   {
     "date": "2026-10-03",
     "topic_summary": "Wrapping incomplete client features in simple feature flags keeps the main branch continuously deployable and eliminates emergency release delays."
+  },
+  {
+    "date": "2026-10-04",
+    "topic_summary": "Requiring developers to convert informal Slack requests into structured, time-capped tickets before coding prevents unbilled scope creep."
   }
 ]
