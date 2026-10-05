@@ -1,10 +1,5 @@
 [
   {
-    "date": "2026-09-01",
-    "pillar": "Async Communication",
-    "topic_summary": "Sending 60-second Loom recordings with complex PRs to cut review times."
-  },
-  {
     "date": "2026-08-28",
     "pillar": "Async Communication",
     "topic_summary": "Most founders don't actually want to micro-manage"
@@ -121,5 +116,9 @@
   {
     "date": "2026-10-04",
     "topic_summary": "Requiring developers to convert informal Slack requests into structured, time-capped tickets before coding prevents unbilled scope creep."
+  },
+  {
+    "date": "2026-10-05",
+    "topic_summary": "Requiring developers to test UI features under simulated slow network conditions catches unhandled loading states before client demos."
   }
 ]
