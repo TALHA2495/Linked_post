@@ -1,10 +1,5 @@
 [
   {
-    "date": "2026-09-29",
-    "pillar": "Async Communication",
-    "topic_summary": "Web development isn't just evolving\u2014it's sprinting.For engineers and CS students, staying ahead isn't about learning every shiny new tool. It\u2019s about mastering the underlying paradigms."
-  },
-  {
     "date": "2026-09-01",
     "topic_summary": "Why small dev agencies need stricter automated CI pipelines when using AI coding tools to avoid review bottlenecks."
   },
@@ -119,5 +114,9 @@
   {
     "date": "2026-10-06",
     "topic_summary": "Enforcing local API mocking before UI integration prevents frontend development delays caused by external client API dependencies."
+  },
+  {
+    "date": "2026-10-07",
+    "topic_summary": "Requiring a brief rollback plan in pull requests with database or API changes prevents botched deployments and emergency client calls."
   }
 ]
