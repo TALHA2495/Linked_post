@@ -1,9 +1,5 @@
 [
   {
-    "date": "2026-09-01",
-    "topic_summary": "Why small dev agencies need stricter automated CI pipelines when using AI coding tools to avoid review bottlenecks."
-  },
-  {
     "date": "2026-09-02",
     "topic_summary": "Encouraging agency developers to present direct recommendations with trade-offs rather than dumping open technical decisions onto founders."
   },
@@ -118,5 +114,9 @@
   {
     "date": "2026-10-07",
     "topic_summary": "Requiring a brief rollback plan in pull requests with database or API changes prevents botched deployments and emergency client calls."
+  },
+  {
+    "date": "2026-10-08",
+    "topic_summary": "Shipping a minor fix to production on a new developer's first day validates pipeline access and onboarding efficiency."
   }
 ]
