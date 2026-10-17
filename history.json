@@ -1,9 +1,5 @@
 [
   {
-    "date": "2026-09-06",
-    "topic_summary": "Standardizing an agency's tech stack on proven tools eliminates single-developer bottlenecks and makes cross-project coverage effortless."
-  },
-  {
     "date": "2026-09-07",
     "topic_summary": "Setting clear budget-checking boundaries before refactoring keeps small agency margins intact while preventing unexpected feature scope creep."
   },
@@ -118,5 +114,9 @@
   {
     "date": "2026-10-13",
     "topic_summary": "Standardizing on a single default tech stack across client projects prevents technical sprawl and speeds up cross-project maintenance."
+  },
+  {
+    "date": "2026-10-17",
+    "topic_summary": "Restricting opportunistic refactoring strictly to files touched in the active ticket prevents bloated PRs and unexpected client regressions."
   }
 ]
