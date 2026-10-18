@@ -1,9 +1,5 @@
 [
   {
-    "date": "2026-09-07",
-    "topic_summary": "Setting clear budget-checking boundaries before refactoring keeps small agency margins intact while preventing unexpected feature scope creep."
-  },
-  {
     "date": "2026-09-08",
     "topic_summary": "Merging incomplete feature code behind feature flags prevents branch rot and streamlines production releases for small agencies."
   },
@@ -118,5 +114,9 @@
   {
     "date": "2026-10-17",
     "topic_summary": "Restricting opportunistic refactoring strictly to files touched in the active ticket prevents bloated PRs and unexpected client regressions."
+  },
+  {
+    "date": "2026-10-18",
+    "topic_summary": "Requiring developers to include a 3-step testing guide in pull requests lets non-technical agency staff quickly verify client features without back-and-forth questions."
   }
 ]
