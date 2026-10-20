@@ -1,9 +1,5 @@
 [
   {
-    "date": "2026-09-09",
-    "topic_summary": "Hiring developers who question feature requirements saves small agencies from scope creep and wasted build time."
-  },
-  {
     "date": "2026-09-10",
     "topic_summary": "Peer sanity checks on preview builds before client handoffs prevent embarrassing bugs and preserve client trust."
   },
@@ -118,5 +114,9 @@
   {
     "date": "2026-10-19",
     "topic_summary": "Restricting dependency updates to dedicated monthly maintenance windows prevents mid-sprint production bugs in client projects."
+  },
+  {
+    "date": "2026-10-20",
+    "topic_summary": "Requiring developers to present two solutions and a recommendation when reporting technical blockers saves founder decision-making time."
   }
 ]
