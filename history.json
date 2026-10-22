@@ -1,9 +1,5 @@
 [
   {
-    "date": "2026-09-10",
-    "topic_summary": "Peer sanity checks on preview builds before client handoffs prevent embarrassing bugs and preserve client trust."
-  },
-  {
     "date": "2026-09-11",
     "topic_summary": "Refactoring legacy client code incrementally protects agency budgets and prevents regressions compared to risky full rewrites."
   },
@@ -118,5 +114,9 @@
   {
     "date": "2026-10-20",
     "topic_summary": "Requiring developers to present two solutions and a recommendation when reporting technical blockers saves founder decision-making time."
+  },
+  {
+    "date": "2026-10-22",
+    "topic_summary": "Time-boxing technical spikes on third-party integrations before quoting project timelines prevents costly agency scope creep."
   }
 ]
