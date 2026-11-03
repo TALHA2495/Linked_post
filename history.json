@@ -1,9 +1,5 @@
 [
   {
-    "date": "2026-09-21",
-    "topic_summary": "Replacing manual setup documentation with an automated executable script reduces setup friction and saves developer hours during project context-switching."
-  },
-  {
     "date": "2026-09-22",
     "topic_summary": "Enforcing a strict 30-minute limit on debugging alone prevents developers from wasting billable hours in quiet isolation."
   },
@@ -118,5 +114,9 @@
   {
     "date": "2026-11-02",
     "topic_summary": "Freezing staging deployments two hours before client demos prevents unexpected bugs and eliminates live pitch stress."
+  },
+  {
+    "date": "2026-11-03",
+    "topic_summary": "Storing raw third-party webhook payloads in a database before processing logic saves debugging time and prevents lost client data."
   }
 ]
