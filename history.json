@@ -1,9 +1,5 @@
 [
   {
-    "date": "2026-10-01",
-    "topic_summary": "Requiring developers to write a failing test before fixing a client bug prevents recurring regressions and saves agency reputation."
-  },
-  {
     "date": "2026-10-02",
     "topic_summary": "Opening draft pull requests within hours of starting a task gives tech leads early visibility to catch bad architectural choices before dev time is wasted."
   },
@@ -118,5 +114,9 @@
   {
     "date": "2026-11-06",
     "topic_summary": "Requiring developers to attach short video walkthroughs to UI pull requests eliminates the need for agency founders to pull code locally for client review checks."
+  },
+  {
+    "date": "2026-11-07",
+    "topic_summary": "Mandating public project channels instead of private DMs for technical troubleshooting builds searchable team context and reduces founder interruptions."
   }
 ]
