@@ -1,9 +1,5 @@
 [
   {
-    "date": "2026-10-04",
-    "topic_summary": "Requiring developers to convert informal Slack requests into structured, time-capped tickets before coding prevents unbilled scope creep."
-  },
-  {
     "date": "2026-10-05",
     "topic_summary": "Requiring developers to test UI features under simulated slow network conditions catches unhandled loading states before client demos."
   },
@@ -118,5 +114,9 @@
   {
     "date": "2026-11-09",
     "topic_summary": "Adding an \"Intentional Trade-offs\" section to PR templates prevents wasted code review time by clarifying cut scope upfront."
+  },
+  {
+    "date": "2026-11-10",
+    "topic_summary": "Requiring developers to test and attach rollback scripts for database schema changes prevents prolonged production downtime during client deployments."
   }
 ]
