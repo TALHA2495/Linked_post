@@ -1,9 +1,5 @@
 [
   {
-    "date": "2026-10-06",
-    "topic_summary": "Enforcing local API mocking before UI integration prevents frontend development delays caused by external client API dependencies."
-  },
-  {
     "date": "2026-10-07",
     "topic_summary": "Requiring a brief rollback plan in pull requests with database or API changes prevents botched deployments and emergency client calls."
   },
@@ -118,5 +114,9 @@
   {
     "date": "2026-11-11",
     "topic_summary": "Enforcing a 20-minute limit on solo troubleshooting prevents developers from burning billable hours on minor technical blockers."
+  },
+  {
+    "date": "2026-11-12",
+    "topic_summary": "Enforcing build-time schema validation for environment variables prevents hidden runtime bugs and developer setup delays caused by missing API keys."
   }
 ]
