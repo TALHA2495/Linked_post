@@ -1,9 +1,5 @@
 [
   {
-    "date": "2026-10-08",
-    "topic_summary": "Shipping a minor fix to production on a new developer's first day validates pipeline access and onboarding efficiency."
-  },
-  {
     "date": "2026-10-10",
     "topic_summary": "Replacing live coding interviews with an async PR review task evaluates real-world developer skills while saving founder interview time."
   },
@@ -118,5 +114,9 @@
   {
     "date": "2026-11-13",
     "topic_summary": "Maintaining realistic database seed scripts in project repositories speeds up local testing and prevents missed edge-case bugs."
+  },
+  {
+    "date": "2026-11-14",
+    "topic_summary": "Requiring developers to test web apps under simulated network throttling during local QA prevents client complaints about slow loading states."
   }
 ]
