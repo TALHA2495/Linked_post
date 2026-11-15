@@ -1,9 +1,5 @@
 [
   {
-    "date": "2026-10-10",
-    "topic_summary": "Replacing live coding interviews with an async PR review task evaluates real-world developer skills while saving founder interview time."
-  },
-  {
     "date": "2026-10-11",
     "topic_summary": "Automated pull request preview deployments prevent clients from testing incomplete work and filing false bug reports on staging."
   },
@@ -118,5 +114,9 @@
   {
     "date": "2026-11-14",
     "topic_summary": "Requiring developers to test web apps under simulated network throttling during local QA prevents client complaints about slow loading states."
+  },
+  {
+    "date": "2026-11-15",
+    "topic_summary": "Wrapping high-risk client features in feature flags allows teams to instantly disable broken code without emergency hotfixes or production downtime."
   }
 ]
