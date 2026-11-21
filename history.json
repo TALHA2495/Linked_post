@@ -1,9 +1,5 @@
 [
   {
-    "date": "2026-10-18",
-    "topic_summary": "Requiring developers to include a 3-step testing guide in pull requests lets non-technical agency staff quickly verify client features without back-and-forth questions."
-  },
-  {
     "date": "2026-10-19",
     "topic_summary": "Restricting dependency updates to dedicated monthly maintenance windows prevents mid-sprint production bugs in client projects."
   },
@@ -118,5 +114,9 @@
   {
     "date": "2026-11-20",
     "topic_summary": "Requiring new developer hires to update project setup docs during their first week keeps onboarding guides accurate and saves founder time."
+  },
+  {
+    "date": "2026-11-21",
+    "topic_summary": "Requiring developers to include a reproducible failing test before patching production bugs prevents recurring issues and protects client trust."
   }
 ]
